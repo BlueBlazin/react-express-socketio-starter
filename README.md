@@ -12,8 +12,7 @@ The setup code is bare minimum to get you started on development. The client sid
 To install, clone the repository and run the following commands:
 
 ```
+npm install -g webpack
 npm install
-```
-```
 npm start
 ```
