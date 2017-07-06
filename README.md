@@ -13,6 +13,7 @@ To install, clone the repository and run the following commands:
 
 ```
 npm install -g webpack
+cd react-express-socketio-starter
 npm install
 npm start
 ```
