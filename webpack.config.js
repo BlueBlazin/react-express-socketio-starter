@@ -3,8 +3,9 @@ var path = require('path');
 
 module.exports = {
   entry: [
-    './src/client.js',
-    'webpack-hot-middleware/client'
+    'react-hot-loader/patch',
+    'webpack-hot-middleware/client',
+    './src/client.js'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
@@ -15,7 +16,7 @@ module.exports = {
     loaders: [
       {
         test: /.jsx?$/,
-        loader: 'babel-loader',
+        loaders: 'babel-loader',
         include: path.join(__dirname, 'src'),
         exclude: /node_modules/,
         query: {
